@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "ciro",
+    "apellido": "angeleri",
+    "direccion": "alvear 535"
+  },
+  {
+    "id": 2,
+    "nombre": "david",
+    "apellido": "curras",
+    "direccion": "santa fe 1250"
+  },
+  {
+    "id": 3,
+    "nombre": "pepe",
+    "apellido": "ortega",
+    "direccion": "cordoba 500"
+  }
+]
