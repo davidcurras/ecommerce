@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/davidcurras/ecommerce.git#readme",
   "dependencies": {
+    "boom": "^5.1.0",
     "hapi": "^16.4.3",
     "inert": "^4.2.0",
+    "joi": "^10.6.0",
     "lodash": "^4.17.4",
     "path": "^0.12.7"
   }
