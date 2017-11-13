@@ -15,6 +15,6 @@ server.register(inert, (err) => {
 })
 
 server.start((err) => {
-  if(err) throw err
+  if (err) throw err
   console.log('Started at ' + server.info.uri)
 })
