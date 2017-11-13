@@ -1,19 +1,31 @@
 {
+	"variables": [],
 	"info": {
 		"name": "ecommerce",
+<<<<<<< HEAD
 		"_postman_id": "b3cc5cd1-1270-1442-7188-28f5f8e1f276",
+=======
+		"_postman_id": "66f11333-6203-ffbb-2d3c-7675a131dbe1",
+>>>>>>> ecommerce#7: Postman Collection
 		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
+<<<<<<< HEAD
 			"name": "user",
+=======
+			"name": "generals",
+			"description": "",
+>>>>>>> ecommerce#7: Postman Collection
 			"item": [
 				{
-					"name": "/user",
+					"name": "general",
 					"request": {
+						"url": "http://localhost:8000/general",
 						"method": "GET",
 						"header": [],
+<<<<<<< HEAD
 						"body": {
 							"mode": "raw",
 							"raw": ""
@@ -29,18 +41,61 @@
 								"user"
 							]
 						}
+=======
+						"body": {},
+						"description": ""
+>>>>>>> ecommerce#7: Postman Collection
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"description": "",
+			"item": [
+				{
+					"name": "product",
+					"request": {
+						"url": "http://localhost:8000/product",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": "List products"
 					},
 					"response": []
 				},
 				{
-					"name": "/user/{id}",
+					"name": "product/{id}",
 					"request": {
+						"url": "http://localhost:8000/product/",
 						"method": "GET",
 						"header": [],
+<<<<<<< HEAD
+=======
+						"body": {},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product",
+					"request": {
+						"url": "http://localhost:8000/product",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+>>>>>>> ecommerce#7: Postman Collection
 						"body": {
 							"mode": "raw",
 							"raw": ""
 						},
+<<<<<<< HEAD
 						"url": {
 							"raw": "http://localhost:8000/user/2",
 							"protocol": "http",
@@ -53,15 +108,77 @@
 								"2"
 							]
 						}
+=======
+						"description": "List products"
 					},
 					"response": []
 				},
 				{
-					"name": "/user/{key}/{value}",
+					"name": "product/{id}",
 					"request": {
+						"url": "http://localhost:8000/product",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product/{id}",
+					"request": {
+						"url": "http://localhost:8000/product",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": "List products"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"description": "",
+			"item": [
+				{
+					"name": "user",
+					"request": {
+						"url": "http://localhost:8000/user",
 						"method": "GET",
 						"header": [],
 						"body": {},
+						"description": ""
+>>>>>>> ecommerce#7: Postman Collection
+					},
+					"response": []
+				},
+				{
+					"name": "user/{id}",
+					"request": {
+						"url": "http://localhost:8000/user",
+						"method": "GET",
+						"header": [],
+						"body": {},
+<<<<<<< HEAD
 						"url": {
 							"raw": "http://localhost:8000/user/name/david",
 							"protocol": "http",
@@ -75,22 +192,27 @@
 								"david"
 							]
 						},
+=======
+>>>>>>> ecommerce#7: Postman Collection
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "/user",
+					"name": "user",
 					"request": {
+						"url": "http://localhost:8000/user",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json"
+								"value": "application/json",
+								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
+<<<<<<< HEAD
 							"raw": "{\n  \"id\": 4,\n  \"username\": \"marcelodosco\",\n  \"pass\": \"123123\",\n  \"email\": \"marcelodosco@gmail.com\",\n  \"name\": \"marcelo\",\n  \"lastName\": \"dosko\",\n  \"address\": \"avenida siempre viva 123\",\n  \"phone\": \"030345678\",\n  \"isAdmin\": false\n}"
 						},
 						"url": {
@@ -104,21 +226,29 @@
 								"user"
 							]
 						}
+=======
+							"raw": ""
+						},
+						"description": ""
+>>>>>>> ecommerce#7: Postman Collection
 					},
 					"response": []
 				},
 				{
-					"name": "/user/{id}",
+					"name": "user/{id}",
 					"request": {
+						"url": "http://localhost:8000/user",
 						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json"
+								"value": "application/json",
+								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
+<<<<<<< HEAD
 							"raw": "{\n  \"id\": 1,\n  \"username\": \"ciroangeleri\",\n  \"pass\": \"234234\",\n  \"email\": \"ciroangeleri@gmail.com\",\n  \"name\": \"ciro\",\n  \"lastName\": \"angeleri\",\n  \"address\": \"santiago 535\",\n  \"phone\": \"0303456\",\n  \"isAdmin\": false\n}"
 						},
 						"url": {
@@ -133,23 +263,31 @@
 								"2"
 							]
 						}
+=======
+							"raw": ""
+						},
+						"description": ""
+>>>>>>> ecommerce#7: Postman Collection
 					},
 					"response": []
 				},
 				{
-					"name": "/user/{id}",
+					"name": "user/{id}",
 					"request": {
+						"url": "http://localhost:8000/user",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json"
+								"value": "application/json",
+								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": ""
 						},
+<<<<<<< HEAD
 						"url": {
 							"raw": "http://localhost:8000/user/2",
 							"protocol": "http",
@@ -483,6 +621,8 @@
 								"13"
 							]
 						},
+=======
+>>>>>>> ecommerce#7: Postman Collection
 						"description": ""
 					},
 					"response": []
