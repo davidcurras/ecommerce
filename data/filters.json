@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Almacen"
+  },
+  {
+    "id": 2,
+    "name": "Bebidas"
+  },
+  {
+    "id": 3,
+    "name": "Congelados"
+  },
+  {
+    "id": 4,
+    "name": "Elaborados"
+  },
+  {
+    "id": 5,
+    "name": "Especiales"
+  },
+  {
+    "id": 6,
+    "name": "Electrónicos"
+  },
+  {
+    "id": 7,
+    "name": "Frescos"
+  },
+  {
+    "id": 8,
+    "name": "Hogar"
+  },
+  {
+    "id": 9,
+    "name": "Limpieza"
+  },
+  {
+    "id": 10,
+    "name": "Ofertas"
+  },
+  {
+    "id": 11,
+    "name": "Perfumería"
+  },
+  {
+    "id": 12,
+    "name": "Textil"
+  }
+]

@@ -1,21 +1,23 @@
 {
 	"info": {
 		"name": "ecommerce",
-		"_postman_id": "dcd9edff-8d18-37c2-317c-3d4d0bcec78a",
+		"_postman_id": "b3cc5cd1-1270-1442-7188-28f5f8e1f276",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "user",
-			"description": "",
 			"item": [
 				{
 					"name": "/user",
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://localhost:8000/user",
 							"protocol": "http",
@@ -26,8 +28,7 @@
 							"path": [
 								"user"
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -36,7 +37,10 @@
 					"request": {
 						"method": "GET",
 						"header": [],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"url": {
 							"raw": "http://localhost:8000/user/2",
 							"protocol": "http",
@@ -48,8 +52,7 @@
 								"user",
 								"2"
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -100,8 +103,7 @@
 							"path": [
 								"user"
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -130,8 +132,7 @@
 								"user",
 								"2"
 							]
-						},
-						"description": ""
+						}
 					},
 					"response": []
 				},
@@ -159,6 +160,166 @@
 							"path": [
 								"user",
 								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "filter",
+			"description": "",
+			"item": [
+				{
+					"name": "/filter",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8000/filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"filter"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/filter/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8000/filter/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"filter",
+								"3"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "filter/{param}/{value}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8000/filter/name/Hogar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"filter",
+								"name",
+								"Hogar"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/filter",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 13,\n    \"nombre\": \"Ofertas\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"filter"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/filter/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"Ofertas\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/filter/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"filter",
+								"2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/filter/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/filter/12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"filter",
+								"12"
 							]
 						},
 						"description": ""
