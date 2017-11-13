@@ -88,7 +88,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": 4,\n  \"username\": \"marcelodosco\",\n  \"pass\": \"123123\",\n  \"email\": \"marcelodosco@gmail.com\",\n  \"name\": \"marcelo\",\n  \"apellido\": \"dosko\",\n  \"address\": \"avenida siempre viva 123\",\n  \"phone\": \"030345678\",\n  \"isAdmin\": false\n}"
+							"raw": "{\n  \"id\": 4,\n  \"username\": \"marcelodosco\",\n  \"pass\": \"123123\",\n  \"email\": \"marcelodosco@gmail.com\",\n  \"name\": \"marcelo\",\n  \"lastName\": \"dosko\",\n  \"address\": \"avenida siempre viva 123\",\n  \"phone\": \"030345678\",\n  \"isAdmin\": false\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8000/user",
@@ -117,7 +117,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"david\",\n    \"direccion\": \"santa fe 2345\"\n}"
+							"raw": "{\n  \"id\": 1,\n  \"username\": \"ciroangeleri\",\n  \"pass\": \"234234\",\n  \"email\": \"ciroangeleri@gmail.com\",\n  \"name\": \"ciro\",\n  \"lastName\": \"angeleri\",\n  \"address\": \"santiago 535\",\n  \"phone\": \"0303456\",\n  \"isAdmin\": false\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8000/user/2",
