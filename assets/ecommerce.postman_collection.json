@@ -63,7 +63,7 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://localhost:8000/user/nombre/david",
+							"raw": "http://localhost:8000/user/name/david",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -71,7 +71,7 @@
 							"port": "8000",
 							"path": [
 								"user",
-								"nombre",
+								"name",
 								"david"
 							]
 						},
@@ -320,6 +320,167 @@
 							"path": [
 								"filter",
 								"12"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"description": "",
+			"item": [
+				{
+					"name": "/category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/category/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8000/category/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/category/{key}/{value}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8000/category/name/coca-cola",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category",
+								"name",
+								"coca-cola"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/category",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n    \"id\": 13,\n    \"name\": \"manaos\",\n    \"parentId\": 1\n  }"
+						},
+						"url": {
+							"raw": "http://localhost:8000/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/category/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 2,\n  \"name\": \"pepsi\",\n  \"parentId\": 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8000/category/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category",
+								"2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/category/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/category/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"category",
+								"13"
 							]
 						},
 						"description": ""
