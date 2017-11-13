@@ -1,7 +1,7 @@
 {
 	"info": {
 		"name": "ecommerce",
-		"_postman_id": "0afc590f-2c60-451d-672d-978f61d6b339",
+		"_postman_id": "dcd9edff-8d18-37c2-317c-3d4d0bcec78a",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -54,6 +54,29 @@
 					"response": []
 				},
 				{
+					"name": "/user/{key}/{value}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:8000/user/nombre/david",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"user",
+								"nombre",
+								"david"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
 					"name": "/user",
 					"request": {
 						"method": "POST",
@@ -65,7 +88,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": 5,\n  \"nombre\": \"marcelo\",\n  \"apellido\": \"dosko\",\n  \"direccion\": \"avenida siempre viva 123\"\n}"
+							"raw": "{\n  \"id\": 4,\n  \"username\": \"marcelodosco\",\n  \"pass\": \"123123\",\n  \"email\": \"marcelodosco@gmail.com\",\n  \"name\": \"marcelo\",\n  \"apellido\": \"dosko\",\n  \"address\": \"avenida siempre viva 123\",\n  \"phone\": \"030345678\",\n  \"isAdmin\": false\n}"
 						},
 						"url": {
 							"raw": "http://localhost:8000/user",
@@ -124,7 +147,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"david\",\n    \"direccion\": \"santa fe 2345\"\n}"
+							"raw": ""
 						},
 						"url": {
 							"raw": "http://localhost:8000/user/2",

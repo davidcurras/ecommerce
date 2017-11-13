@@ -22,6 +22,20 @@ const routes = [
     }
   },
   {
+    method: 'GET',
+    path: '/user/{key}/{value}',
+    handler: (request, reply) => {
+      const key = request.params.key
+      const value = request.params.value
+      console.log('GET /user/'+key + '/' +value);
+      const filter = {}
+      filter[key] = value
+      const users = _.filter(data.users, filter)
+      if (users && users.length) reply(users)
+      else reply({error: 'not found'})
+    }
+  },
+  {
     method: 'POST',
     path: '/user',
     handler: (request, reply) => {

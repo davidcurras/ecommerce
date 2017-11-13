@@ -1,20 +1,35 @@
 [
   {
     "id": 1,
-    "nombre": "ciro",
+    "username": "ciroangeleri",
+    "pass": "234234",
+    "email": "ciroangeleri@gmail.com",
+    "name": "ciro",
     "apellido": "angeleri",
-    "direccion": "alvear 535"
+    "address": "alvear 535",
+    "phone": "0303456",
+    "isAdmin": false
   },
   {
     "id": 2,
-    "nombre": "david",
+    "username": "davidcurras",
+    "pass": "456789",
+    "email": "davidcurras@gmail.com",
+    "name": "david",
     "apellido": "curras",
-    "direccion": "santa fe 1250"
+    "address": "santa fe 1250",
+    "phone": "0303567",
+    "isAdmin": false
   },
   {
     "id": 3,
-    "nombre": "pepe",
+    "username": "davidortega",
+    "pass": "david123",
+    "email": "davidortega@gmail.com",
+    "name": "david",
     "apellido": "ortega",
-    "direccion": "cordoba 500"
+    "address": "cordoba 500",
+    "phone": "030356789",
+    "isAdmin": true
   }
 ]
