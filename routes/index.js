@@ -3,5 +3,6 @@ const user = require('./user')
 const general = require('./general')
 const category = require('./category')
 const static = require('./static')
+const product = require('./product')
 
-module.exports = [].concat(filter, general, user, static, category)
+module.exports = [].concat(filter, general, product, user, static, category)

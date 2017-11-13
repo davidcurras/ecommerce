@@ -1,0 +1,22 @@
+[
+  {
+    "id":1,
+    "categoryId":2,
+    "name":"Wine",
+    "image":"./img/wine_01.jpg",
+    "description":"Sweet wine",
+    "stock":34,
+    "price":5.3,
+    "offer":4.3
+  },
+  {
+    "id":2,
+    "categoryId":3,
+    "name":"Red apple",
+    "image":"./img/Apple_01.jpg",
+    "description":"Red Apple, import for Argentine",
+    "stock":50,
+    "price":1.5,
+    "offer":1
+  }
+]
