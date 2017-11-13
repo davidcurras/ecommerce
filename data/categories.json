@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "gaseosas",
+    "parentId": null
+  },
+  {
+    "id": 2,
+    "name": "coca-cola",
+    "parentId": 1
+  },
+  {
+    "id": 3,
+    "name": "sprite",
+    "parentId": 1
+  },
+  {
+    "id": 4,
+    "name": "fanta",
+    "parentId": 1
+  },
+  {
+    "id": 5,
+    "name": "7up",
+    "parentId": 1
+  },
+  {
+    "id": 6,
+    "name": "mirinda",
+    "parentId": "1"
+  },
+  {
+    "id": 7,
+    "name": "sin tacc",
+    "parentId": null
+  },
+  {
+    "id": 8,
+    "name": "chipa",
+    "parentId": 7
+  },
+  {
+    "id": 9,
+    "name": "pan gluten-free",
+    "parentId": 7
+  },
+  {
+    "id": 10,
+    "name": "alfajor gluten-free",
+    "parentId": 7
+  },
+  {
+    "id": 11,
+    "name": "arroz gallo gluten-free",
+    "parentId": 7
+  },
+  {
+    "id": 12,
+    "name": "quesp port-salut gluten-free",
+    "parentId": 7
+  }
+]
