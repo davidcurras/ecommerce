@@ -22,6 +22,43 @@ const routes = [
     }
   },
   {
+    method: 'GET',
+    path: '/product/filter/{filterId}',
+    handler: (request, reply) => {
+      const filterId = parseInt(request.params.filterId)
+      console.log('GET /product/filter/'+filterId)
+      const products = data.products.filter(product =>
+                          product.filters.find(value => {
+                            if(value===filterId) return true
+                            }
+                          )
+                        )
+      if (products && products.length) reply(products)
+      else reply({error: 'not found'})
+    }
+  },
+
+  {
+    method: 'GET',
+    path: '/product/category/{categoryId}/filter/{filterId}',
+    handler: (request, reply) => {
+      const categoryId = parseInt(request.params.categoryId)
+      const filterId = parseInt(request.params.filterId)
+      console.log('GET /product/category/'+categoryId+'/filter/'+filterId)
+      const productsCat = data.products.filter(product =>
+                            product.categoryId === categoryId
+                          )
+      const productsCatFilter = productsCat.filter(product =>
+                          product.filters.find(value => {
+                            if(value===filterId) return true
+                            }
+                          )
+                        )
+      if (productsCatFilter && productsCatFilter.length) reply(productsCatFilter)
+      else reply({error: 'not found'})
+    }
+  },
+  {
     method: 'POST',
     path: '/product',
     handler: (request, reply) => {
