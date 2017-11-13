@@ -5,7 +5,7 @@
     "pass": "234234",
     "email": "ciroangeleri@gmail.com",
     "name": "ciro",
-    "apellido": "angeleri",
+    "lastName": "angeleri",
     "address": "alvear 535",
     "phone": "0303456",
     "isAdmin": false
@@ -16,7 +16,7 @@
     "pass": "456789",
     "email": "davidcurras@gmail.com",
     "name": "david",
-    "apellido": "curras",
+    "lastName": "curras",
     "address": "santa fe 1250",
     "phone": "0303567",
     "isAdmin": false
@@ -27,7 +27,7 @@
     "pass": "david123",
     "email": "davidortega@gmail.com",
     "name": "david",
-    "apellido": "ortega",
+    "lastName": "ortega",
     "address": "cordoba 500",
     "phone": "030356789",
     "isAdmin": true
