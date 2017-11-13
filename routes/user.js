@@ -1,6 +1,7 @@
 const _ = require('lodash')
 const joi = require('joi')
 const boom = require('boom')
+const utils = require('../utils')
 const data = require('../data')
 
 const routes = [
@@ -73,6 +74,7 @@ const routes = [
     handler: (request, reply) => {
       console.log('POST /user/')
       data.users.push(request.payload)
+      utils.writeFile('../data/users.json', data.users)
       reply(request.payload)
     }
   },
@@ -103,6 +105,7 @@ const routes = [
       const index = _.findIndex(data.users, {'id': userId})
       if (index >= 0) {
         data.users[index] = request.payload
+        utils.writeFile('../data/users.json', data.users)
         reply(data.users[index])
       }
       else reply(boom.notFound('User '+userId+' not found'))
@@ -124,6 +127,7 @@ const routes = [
       const index = _.findIndex(data.users, {'id': userId})
       if (index >= 0) {
         data.users.splice(index, 1)
+        utils.writeFile('../data/users.json', data.users)
         reply({deleted: true})
       }
       else reply(boom.notFound('User '+userId+' not found'))
