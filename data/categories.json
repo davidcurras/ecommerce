@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "gaseosas",
-    "parentId": null
+    "parentId": 0
   },
   {
     "id": 2,
@@ -27,12 +27,12 @@
   {
     "id": 6,
     "name": "mirinda",
-    "parentId": "1"
+    "parentId": 1
   },
   {
     "id": 7,
     "name": "sin tacc",
-    "parentId": null
+    "parentId": 0
   },
   {
     "id": 8,

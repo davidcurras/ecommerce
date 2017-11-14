@@ -1,35 +1,21 @@
 {
-	"variables": [],
 	"info": {
 		"name": "ecommerce",
-<<<<<<< HEAD
-		"_postman_id": "b3cc5cd1-1270-1442-7188-28f5f8e1f276",
-=======
-		"_postman_id": "66f11333-6203-ffbb-2d3c-7675a131dbe1",
->>>>>>> ecommerce#7: Postman Collection
+		"_postman_id": "dcd9edff-8d18-37c2-317c-3d4d0bcec78a",
 		"description": "",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-<<<<<<< HEAD
 			"name": "user",
-=======
-			"name": "generals",
 			"description": "",
->>>>>>> ecommerce#7: Postman Collection
 			"item": [
 				{
-					"name": "general",
+					"name": "/user",
 					"request": {
-						"url": "http://localhost:8000/general",
 						"method": "GET",
 						"header": [],
-<<<<<<< HEAD
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"body": {},
 						"url": {
 							"raw": "http://localhost:8000/user",
 							"protocol": "http",
@@ -40,62 +26,17 @@
 							"path": [
 								"user"
 							]
-						}
-=======
-						"body": {},
-						"description": ""
->>>>>>> ecommerce#7: Postman Collection
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "products",
-			"description": "",
-			"item": [
-				{
-					"name": "product",
-					"request": {
-						"url": "http://localhost:8000/product",
-						"method": "GET",
-						"header": [],
-						"body": {},
-						"description": "List products"
-					},
-					"response": []
-				},
-				{
-					"name": "product/{id}",
-					"request": {
-						"url": "http://localhost:8000/product/",
-						"method": "GET",
-						"header": [],
-<<<<<<< HEAD
-=======
-						"body": {},
-						"description": "List products"
-					},
-					"response": []
-				},
-				{
-					"name": "product",
-					"request": {
-						"url": "http://localhost:8000/product",
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
-							}
-						],
->>>>>>> ecommerce#7: Postman Collection
-						"body": {
-							"mode": "raw",
-							"raw": ""
 						},
-<<<<<<< HEAD
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "/user/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
 						"url": {
 							"raw": "http://localhost:8000/user/2",
 							"protocol": "http",
@@ -107,78 +48,17 @@
 								"user",
 								"2"
 							]
-						}
-=======
-						"description": "List products"
-					},
-					"response": []
-				},
-				{
-					"name": "product/{id}",
-					"request": {
-						"url": "http://localhost:8000/product",
-						"method": "PUT",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
 						},
-						"description": "List products"
-					},
-					"response": []
-				},
-				{
-					"name": "product/{id}",
-					"request": {
-						"url": "http://localhost:8000/product",
-						"method": "DELETE",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
-						"description": "List products"
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "users",
-			"description": "",
-			"item": [
-				{
-					"name": "user",
-					"request": {
-						"url": "http://localhost:8000/user",
-						"method": "GET",
-						"header": [],
-						"body": {},
 						"description": ""
->>>>>>> ecommerce#7: Postman Collection
 					},
 					"response": []
 				},
 				{
-					"name": "user/{id}",
+					"name": "/user/{key}/{value}",
 					"request": {
-						"url": "http://localhost:8000/user",
 						"method": "GET",
 						"header": [],
 						"body": {},
-<<<<<<< HEAD
 						"url": {
 							"raw": "http://localhost:8000/user/name/david",
 							"protocol": "http",
@@ -192,27 +72,22 @@
 								"david"
 							]
 						},
-=======
->>>>>>> ecommerce#7: Postman Collection
 						"description": ""
 					},
 					"response": []
 				},
 				{
-					"name": "user",
+					"name": "/user",
 					"request": {
-						"url": "http://localhost:8000/user",
 						"method": "POST",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
-<<<<<<< HEAD
 							"raw": "{\n  \"id\": 4,\n  \"username\": \"marcelodosco\",\n  \"pass\": \"123123\",\n  \"email\": \"marcelodosco@gmail.com\",\n  \"name\": \"marcelo\",\n  \"lastName\": \"dosko\",\n  \"address\": \"avenida siempre viva 123\",\n  \"phone\": \"030345678\",\n  \"isAdmin\": false\n}"
 						},
 						"url": {
@@ -225,30 +100,23 @@
 							"path": [
 								"user"
 							]
-						}
-=======
-							"raw": ""
 						},
 						"description": ""
->>>>>>> ecommerce#7: Postman Collection
 					},
 					"response": []
 				},
 				{
-					"name": "user/{id}",
+					"name": "/user/{id}",
 					"request": {
-						"url": "http://localhost:8000/user",
 						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
-<<<<<<< HEAD
 							"raw": "{\n  \"id\": 1,\n  \"username\": \"ciroangeleri\",\n  \"pass\": \"234234\",\n  \"email\": \"ciroangeleri@gmail.com\",\n  \"name\": \"ciro\",\n  \"lastName\": \"angeleri\",\n  \"address\": \"santiago 535\",\n  \"phone\": \"0303456\",\n  \"isAdmin\": false\n}"
 						},
 						"url": {
@@ -262,32 +130,25 @@
 								"user",
 								"2"
 							]
-						}
-=======
-							"raw": ""
 						},
 						"description": ""
->>>>>>> ecommerce#7: Postman Collection
 					},
 					"response": []
 				},
 				{
-					"name": "user/{id}",
+					"name": "/user/{id}",
 					"request": {
-						"url": "http://localhost:8000/user",
 						"method": "DELETE",
 						"header": [
 							{
 								"key": "Content-Type",
-								"value": "application/json",
-								"description": ""
+								"value": "application/json"
 							}
 						],
 						"body": {
 							"mode": "raw",
 							"raw": ""
 						},
-<<<<<<< HEAD
 						"url": {
 							"raw": "http://localhost:8000/user/2",
 							"protocol": "http",
@@ -299,31 +160,32 @@
 								"user",
 								"2"
 							]
-						}
+						},
+						"description": ""
 					},
 					"response": []
 				}
 			]
 		},
 		{
-			"name": "filter",
+			"name": "order",
 			"description": "",
 			"item": [
 				{
-					"name": "/filter",
+					"name": "/order",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://localhost:8000/filter",
+							"raw": "http://localhost:8000/order",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"filter"
+								"order"
 							]
 						},
 						"description": ""
@@ -331,21 +193,21 @@
 					"response": []
 				},
 				{
-					"name": "/filter/{id}",
+					"name": "/order/{id}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://localhost:8000/filter/3",
+							"raw": "http://localhost:8000/order/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"filter",
-								"3"
+								"order",
+								"2"
 							]
 						},
 						"description": ""
@@ -353,22 +215,22 @@
 					"response": []
 				},
 				{
-					"name": "filter/{param}/{value}",
+					"name": "/order/{key}/{value}",
 					"request": {
 						"method": "GET",
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://localhost:8000/filter/name/Hogar",
+							"raw": "http://localhost:8000/order/userId/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"filter",
-								"name",
-								"Hogar"
+								"order",
+								"userId",
+								"1"
 							]
 						},
 						"description": ""
@@ -376,7 +238,7 @@
 					"response": []
 				},
 				{
-					"name": "/filter",
+					"name": "/order",
 					"request": {
 						"method": "POST",
 						"header": [
@@ -387,17 +249,17 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 13,\n    \"nombre\": \"Ofertas\"\n}"
+							"raw": "{\n\"id\": 7,\n\"userId\": 1,\n\"date\": \"02-05-2017\",\n\"products\": [\n  {\"id\": 4},\n  {\"id\": 2},\n  {\"id\": 3},\n  {\"id\": 5}\n]\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8000/filter",
+							"raw": "http://localhost:8000/order",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"filter"
+								"order"
 							]
 						},
 						"description": ""
@@ -405,7 +267,7 @@
 					"response": []
 				},
 				{
-					"name": "/filter/{id}",
+					"name": "/order/{id}",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -416,18 +278,18 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2,\n    \"nombre\": \"Ofertas\"\n}"
+							"raw": "{\n\t\"id\":1,\n\t\"userId\":12,\n\t\"date\":\"02-10-2017\",\n\t\"products\":[\n\t\t{\"id\":9},\n\t\t{\"id\":3},\n\t\t{\"id\":5},\n\t\t{\"id\":4}\n\t]\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8000/filter/2",
+							"raw": "http://localhost:8000/order/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"filter",
-								"2"
+								"order",
+								"1"
 							]
 						},
 						"description": ""
@@ -435,7 +297,7 @@
 					"response": []
 				},
 				{
-					"name": "/filter/{id}",
+					"name": "/order/{id}",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -449,15 +311,15 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8000/filter/12",
+							"raw": "http://localhost:8000/order/7",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
-								"filter",
-								"12"
+								"order",
+								"7"
 							]
 						},
 						"description": ""
@@ -520,7 +382,7 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://localhost:8000/category/name/coca-cola",
+							"raw": "http://localhost:8000/category/parentId/7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -528,8 +390,8 @@
 							"port": "8000",
 							"path": [
 								"category",
-								"name",
-								"coca-cola"
+								"parentId",
+								"7"
 							]
 						},
 						"description": ""
@@ -621,8 +483,6 @@
 								"13"
 							]
 						},
-=======
->>>>>>> ecommerce#7: Postman Collection
 						"description": ""
 					},
 					"response": []
