@@ -45,11 +45,17 @@ const routes = [
     handler: (request, reply) => {
       const key = request.params.key
       const value = request.params.value
+<<<<<<< HEAD
       console.log('GET /order/' + key + '/' + value);
       const filter = {}
       filter[key] = value
       const orders = _.filter(data.orders, (orders) => {
         return orders[key].toString() === value.toString()
+=======
+      console.log('GET /order/' + key + '/' + value)
+      const orders = _.filter(data.orders, (order) => {
+        return order[key].toString() === value.toString()
+>>>>>>> ecommerce#8: order api
       })
       if (orders && orders.length) reply(orders)
       else reply(boom.notFound('No matches'))
@@ -60,6 +66,7 @@ const routes = [
     path: '/order',
     config: {
       validate: {
+<<<<<<< HEAD
         payload: joi.object().required({
           "id": joi.number().required(),
           "userId": joi.number().required(),
@@ -68,6 +75,17 @@ const routes = [
             "id": joi.number().required()
             })
           )
+=======
+        payload: joi.object({
+          id: joi.number().required(),
+          userId: joi.number().required(),
+          date: joi.string().required(),
+          products: joi.array().items(
+            joi.object({
+              productsId: joi.number()
+            })
+          ).required()
+>>>>>>> ecommerce#8: order api
         })
       }
     },
@@ -83,6 +101,7 @@ const routes = [
     path: '/order/{id}',
     config: {
       validate: {
+<<<<<<< HEAD
         payload: joi.object().required({
           "id": joi.number().required(),
           "userId": joi.number().required(),
@@ -93,6 +112,22 @@ const routes = [
           )
         })
       }
+=======
+        params: joi.object({
+          id: joi.number()
+        }),
+        payload: joi.object({
+          id: joi.number().required(),
+          userId: joi.number().required(),
+          date: joi.string().required(),
+          products: joi.array().items(
+            joi.object({
+              productsId: joi.number()
+            })
+          ).required()
+        }),
+      },
+>>>>>>> ecommerce#8: order api
     },
     handler: (request, reply) => {
       const orderId = parseInt(request.params.id)
@@ -103,7 +138,11 @@ const routes = [
         utils.writeFile('../data/orders.json', data.orders)
         reply(data.orders[index])
       }
+<<<<<<< HEAD
       else reply(boom.notFound('Order '+orderId+' not found'))
+=======
+      else reply(boom.notFound('order '+orderId+' not found'))
+>>>>>>> ecommerce#8: order api
     }
   },
   {
@@ -111,8 +150,13 @@ const routes = [
     path: '/order/{id}',
     config: {
       validate: {
+<<<<<<< HEAD
         params: joi.object().required({
           id: joi.number().required()
+=======
+        params: joi.object({
+          id: joi.number()
+>>>>>>> ecommerce#8: order api
         })
       }
     },
@@ -125,7 +169,11 @@ const routes = [
         utils.writeFile('../data/orders.json', data.orders)
         reply({deleted: true})
       }
+<<<<<<< HEAD
       else reply(boom.notFound('Order '+orderId+' not found'))
+=======
+      else reply(boom.notFound('User '+orderId+' not found'))
+>>>>>>> ecommerce#8: order api
     }
   }
 ]
