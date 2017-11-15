@@ -221,7 +221,7 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "http://localhost:8000/order/userId/1",
+							"raw": "http://localhost:8000/order/userId/2",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -230,7 +230,7 @@
 							"path": [
 								"order",
 								"userId",
-								"1"
+								"2"
 							]
 						},
 						"description": ""
@@ -278,10 +278,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"id\":1,\n\t\"userId\":12,\n\t\"date\":\"02-10-2017\",\n\t\"products\":[\n\t\t{\"id\":9},\n\t\t{\"id\":3},\n\t\t{\"id\":5},\n\t\t{\"id\":4}\n\t]\n}"
+							"raw": "{\n\t\"id\":7,\n\t\"userId\":1,\n\t\"date\":\"02-10-2017\",\n\t\"products\":[\n\t\t{\"id\":9},\n\t\t{\"id\":3},\n\t\t{\"id\":5},\n\t\t{\"id\":4}\n\t]\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8000/order/1",
+							"raw": "http://localhost:8000/order/7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -289,7 +289,7 @@
 							"port": "8000",
 							"path": [
 								"order",
-								"1"
+								"7"
 							]
 						},
 						"description": ""
@@ -323,6 +323,229 @@
 							]
 						},
 						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "generals",
+			"item": [
+				{
+					"name": "general",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/general",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"general"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product"
+							]
+						},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/product/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product",
+								""
+							]
+						},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product"
+							]
+						},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product/{id}",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product"
+							]
+						},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product"
+							]
+						},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product/filter/{filterId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/product/filter/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product",
+								"filter",
+								""
+							]
+						},
+						"description": "List products"
+					},
+					"response": []
+				},
+				{
+					"name": "product/category/{categoryId}/filter/{filterId}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8000/product/category/2/filter/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"product",
+								"category",
+								"2",
+								"filter",
+								"2"
+							]
+						},
+						"description": "List products"
 					},
 					"response": []
 				}
@@ -439,10 +662,10 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"id\": 2,\n  \"name\": \"pepsi\",\n  \"parentId\": 1\n}"
+							"raw": "{\n  \"id\": 13,\n  \"name\": \"coca-cola\",\n  \"parentId\": 1\n}"
 						},
 						"url": {
-							"raw": "http://localhost:8000/category/2",
+							"raw": "http://localhost:8000/category/13",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -450,7 +673,7 @@
 							"port": "8000",
 							"path": [
 								"category",
-								"2"
+								"13"
 							]
 						},
 						"description": ""
