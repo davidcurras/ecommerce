@@ -1,5 +1,7 @@
 const _ = require('lodash')
 const data = require('../data')
+const boom = require('boom')
+const joi = require('joi')
 
 const routes = [
   {
@@ -13,6 +15,13 @@ const routes = [
   {
     method: 'GET',
     path: '/category/{id}',
+    config: {
+      validate: {
+        params: joi.object().required({
+          id: joi.number().required()
+        })
+      }
+    },
     handler: (request, reply) => {
       const categoryId = parseInt(request.params.id)
       console.log('GET /category/'+categoryId)
@@ -24,25 +33,40 @@ const routes = [
   {
     method: 'GET',
     path: '/category/{key}/{value}',
+    config: {
+      validate: {
+        params: joi.object().required({
+          key: joi.string().required(),
+          value: joi.string().required(),
+        })
+      }
+    },
     handler: (request, reply) => {
       const key = request.params.key
-      var value
-      if (!parseInt(request.params.value)) {
-        value = request.params.value
-      } else {
-        value = parseInt(request.params.value)
-      }
+      const value = request.params.value
       console.log('GET /category/'+key + '/' +value);
-      const filter = {}
-      filter[key] = value
-      const categories = _.filter(data.categories, filter)
+      const categories = _.filter(data.categories, (categories) => {
+        console.log(categories);
+        console.log(value);
+        console.log(key);
+        return categories[key].toString() === value.toString()
+      })
       if (categories && categories.length) reply(categories)
-      else reply({error: 'not found'})
+      else reply(boom.notFound('No matches'))
     }
   },
   {
     method: 'POST',
     path: '/category',
+    config: {
+      validate: {
+        payload: joi.object().required({
+          "id": joi.number().required(),
+          "name": joi.string().required(),
+          "parentId": joi.number().required()
+        })
+      }
+    },
     handler: (request, reply) => {
       console.log('POST /category/')
       data.categories.push(request.payload)
@@ -52,6 +76,15 @@ const routes = [
   {
     method: 'PUT',
     path: '/category/{id}',
+    config: {
+      validate: {
+        payload: joi.object().required({
+          "id": joi.number().required(),
+          "name": joi.string().required(),
+          "parentId": joi.number().required()
+        })
+      }
+    },
     handler: (request, reply) => {
       const categoryId = parseInt(request.params.id)
       console.log('PUT /categories/'+categoryId)
@@ -66,6 +99,13 @@ const routes = [
   {
     method: 'DELETE',
     path: '/category/{id}',
+    config: {
+      validate: {
+        params: joi.object().required({
+          id: joi.number().required()
+        })
+      }
+    },
     handler: (request, reply) => {
       const categoryId = parseInt(request.params.id)
       console.log('DELETE /categories/'+categoryId)
